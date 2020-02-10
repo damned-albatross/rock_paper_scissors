@@ -80,18 +80,17 @@ header>h1 {
     border-radius: 50%;
     padding: 10px;
     margin: 0px 20px;
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 black;
 }
 .choice:hover {
     cursor: pointer;
-    background: #24272e;
+    background: #e2584d;
+}
+.choice:active {
+    background-color: #e2584d;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
 }
 
-#r {
-
-}
-#p {
-
-}
-#s {
-
-}
+/* rule message modification */
