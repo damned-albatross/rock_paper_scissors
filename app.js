@@ -67,7 +67,8 @@ function lose(userChoice, computerChoice) {
     
 }
 
-function draw() {
+function draw(userChoice, computerChoice) {
+    result_p.innerHTML = `Your ${convertToWord (userChoice)} is the same as Computer's ${convertToWord(computerChoice)} </br> It's a Tie!`;
 }
 
 function main() {
