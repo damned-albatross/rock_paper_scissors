@@ -7,8 +7,30 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-      <h1> Rock Paper Scissors </h1>
+      <header>
+       <h1> Rock Paper Scissors </h1>   
+      </header>
+      <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+      </div>
+      <div class="result">
+          <p>Paper covers Rock. You Win!</p>
+      </div>
+      <div class="choices">
+        <div id="r" class="choice">
+            <img src="images/rock.png" alt="">
+        </div>
+        <div id="p" class="choice">
+            <img src="images/paper.png" alt="">
+        </div>
+        <div id="s" class="choice">
+            <img src="images/scissors.png" alt="">
+        </div>
+      </div>
       
+      <p id="game-rules"> Play against the computer - whoever wins 5 times is the champion! <br> Don't forget,<b> Paper</b> beats <b>Rock</b></br>. </br><b>Rock</b> beats <b>Scissors</b></br>. <br><b>Scissors</b> beats<b>Paper</b></br></p>
     <script src="app.js"></script>
 
   </body>
