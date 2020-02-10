@@ -1,5 +1,7 @@
 /* below is how you add fonts - using Google Fonts (fonts.google.com*/
 @import url('https://fonts.googleapis.com/css?family=Asap:400,500i,700');
+
+/*  universal - top level modifications*/
 *{
      margin: 0;
      padding: 0;   
@@ -8,16 +10,20 @@
 body {
     background: #24272e;
 }
+
+/* header modifications */ 
 header {
     background: white;
     padding: 20px;
 }
+
 header>h1 {
    color: #24272e; 
    font-family: Asap, sans-serif;
    text-align: center;
    font-size: 50px;
 }
+/* scoreboard modifications */
 .score-board{
     border: 3px solid white;
     width: 200px;
@@ -47,5 +53,45 @@ header>h1 {
     position: absolute;
     top: 30px;
     right: -45px;
+
+}
+
+/*results modifications */
+.result {
+    font-size: 40px;
+    color: white;
+
+
+}
+.result > p {
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+}
+
+/* rock, paper scissors image modifications */
+.choices {
+    text-align: center;
+    margin: 50px 0px ;
+}
+.choice {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px 20px;
+}
+.choice:hover {
+    cursor: pointer;
+    background: #24272e;
+}
+
+#r {
+
+}
+#p {
+
+}
+#s {
 
 }
