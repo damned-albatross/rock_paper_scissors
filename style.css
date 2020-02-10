@@ -23,7 +23,7 @@ header>h1 {
    text-align: center;
    font-size: 50px;
 }
-/* scoreboard modifications */
+ /* scoreboard modifications */
 .score-board{
     border: 3px solid white;
     width: 200px;
@@ -93,7 +93,7 @@ header>h1 {
     transform: translateY(4px);
 }
 
-/* rule message modification */
+/* game rules message modification */
 .accordion {
     background-color: #eee;
     color: #444;

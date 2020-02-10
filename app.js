@@ -56,7 +56,7 @@ function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore
-    result_p.innerHTML = `Your ${convertToWord (userChoice)} beats Computer's ${convertToWord(computerChoice)} </br> You Win!`;
+    result_p.innerHTML = `Your ${convertToWord(userChoice)} beats Computer's ${convertToWord(computerChoice)} </br> You Win!`;
 }
 
 function lose(userChoice, computerChoice) {
