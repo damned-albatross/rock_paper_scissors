@@ -1,0 +1,44 @@
+/* below is how you add fonts - using Google Fonts (fonts.google.com*/
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500i,700');
+*{
+     margin: 0;
+     padding: 0;   
+     box-sizing: border-box;
+}
+body {
+    background: #24272e;
+}
+header {
+    background: white;
+    padding: 20px;
+}
+header>h1 {
+   color: #24272e; 
+   font-family: Asap, sans-serif;
+   text-align: center;
+   font-size: 50px;
+}
+.score-board{
+    border: 3px solid white;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    font-size: 46px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: Asap, sans-serif;
+}
+.badge {
+    background:#e2584d;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: Asap, sans-serif;
+}
+#user-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
