@@ -94,3 +94,33 @@ header>h1 {
 }
 
 /* rule message modification */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+    overflow: auto;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow-anchor: none;
+  }
+ .panel>p {
+    text-align: center;
+    color: #24272e;
+    font-family: Asap, sans-serif;
+    font-size: 20px;
+ }
