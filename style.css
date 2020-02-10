@@ -28,6 +28,7 @@ header>h1 {
     text-align: center;
     padding: 15px 20px;
     font-family: Asap, sans-serif;
+    position: relative;
 }
 .badge {
     background:#e2584d;
@@ -38,7 +39,13 @@ header>h1 {
 }
 #user-label {
     position: absolute;
-    top: 0;
-    left: 0;
-    
+    top: 30px;
+    left: -25px;
+
+}
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -45px;
+
 }
