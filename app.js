@@ -46,21 +46,28 @@ function game(userChoice) {
 }
 game();
 
+function convertToWord (letter) {
+    if (letter === "r") return "Rock";
+    if (letter === "p") return "Paper";
+    return "Scissors"
+}
 
 function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore
-    result_p.innerHTML = userChoice + " beats " + computerChoice + "</br>" + "You Win!";
+    result_p.innerHTML = `Your ${convertToWord (userChoice)} beats Computer's ${convertToWord(computerChoice)} </br> You Win!`;
 }
 
-function lose() {
-    console.log("Lose");
+function lose(userChoice, computerChoice) {
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore
+    result_p.innerHTML = `Computer's ${convertToWord (computerChoice)} beats Your ${convertToWord(userChoice)} </br> You Lose!`;
     
 }
 
 function draw() {
-    console.log("Draw");
 }
 
 function main() {
