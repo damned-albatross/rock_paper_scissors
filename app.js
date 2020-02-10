@@ -1,13 +1,13 @@
 // below are my gloabal variables
 var acc = document.getElementsByClassName("accordion");
 var i;
-const userScore =0;
-const computerScore=0;
+let userScore =0;
+let computerScore=0;
 //the below are DOM variables - not the same as normal variables because they are referencing tags in our HTML
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreboard_div = document.querySelector(".scoreboard");
-const result_div = document.querySelector(".result");
+const result_p = document.querySelector(".result>p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
@@ -28,30 +28,35 @@ function game(userChoice) {
         case "pr":
         case "sp":
         case "rs":
-            win();
+            win(userChoice, computerChoice);
             break;
         //lose statements
         case "rp":
         case "ps":
         case "sr":
-            lose();
+            lose(userChoice, computerChoice);
             break;
         //tie statements
         case "rr":
         case "pp":
         case "ss": 
-            draw();
+            draw(userChoice, computerChoice);
             break;
     }
 }
 game();
 
-function win() {
-    console.log("Win");
+
+function win(userChoice, computerChoice) {
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore
+    result_p.innerHTML = userChoice + " beats " + computerChoice + "</br>" + "You Win!";
 }
 
 function lose() {
     console.log("Lose");
+    
 }
 
 function draw() {
