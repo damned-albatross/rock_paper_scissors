@@ -23,6 +23,26 @@ function game(userChoice) {
     const computerChoice = getComputerChoice();
     console.log("user choice ==>" + userChoice);
     console.log("computer choice ==>" + computerChoice);
+    switch (userChoice + computerChoice) {
+        //win statements
+        case "pr":
+        case "sp":
+        case "rs":
+            console.log("User Wins!");
+            break;
+        //lose statements
+        case "rp":
+        case "ps":
+        case "sr":
+            console.log("User Loses!");
+            break;
+        //tie statements
+        case "rr":
+        case "pp":
+        case "ss": 
+            console.log("It's a Tie");
+            break;
+    }
 }
 game();
 
