@@ -12,15 +12,31 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
-rock_div.addEventListener('click', function() {
-    console.log("hey you clicked on rock")
-})
-paper_div.addEventListener('click', function() {
-    console.log("hey you clicked on paper")
-})
-scissors_div.addEventListener('click', function() {
-    console.log("hey you clicked on scissors")
-})
+function getComputerChoice() {
+    const choices= ["r", "p", "s"];
+    const randomNumber = (Math.floor(Math.random()*3));
+    //the below allows us to randomize the "choices" variable using the random Number variable 
+    return choices [randomNumber];
+}
+
+function game(userChoice) {
+
+}
+
+function main() {
+    rock_div.addEventListener('click', function() {
+        game("r")
+    })
+    paper_div.addEventListener('click', function() {
+        game("p")
+    })
+    scissors_div.addEventListener('click', function() {
+        game("s")
+    })  
+}
+
+main();
+
 
 //function for accordian
 for (i = 0; i < acc.length; i++) {
