@@ -28,23 +28,35 @@ function game(userChoice) {
         case "pr":
         case "sp":
         case "rs":
-            console.log("User Wins!");
+            win();
             break;
         //lose statements
         case "rp":
         case "ps":
         case "sr":
-            console.log("User Loses!");
+            lose();
             break;
         //tie statements
         case "rr":
         case "pp":
         case "ss": 
-            console.log("It's a Tie");
+            draw();
             break;
     }
 }
 game();
+
+function win() {
+    console.log("Win");
+}
+
+function lose() {
+    console.log("Lose");
+}
+
+function draw() {
+    console.log("Draw");
+}
 
 function main() {
     rock_div.addEventListener('click', function() {
@@ -59,7 +71,6 @@ function main() {
 }
 
 main();
-
 
 //function for accordian
 for (i = 0; i < acc.length; i++) {
