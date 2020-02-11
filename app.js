@@ -4,7 +4,7 @@ var res = document.getElementsByClassName("reset-game");
 var i;
 let userScore =0;
 let computerScore=0;
-let newGame = 0;
+const gameOver = userScore === 5 || userScore === 5;
 //the below are DOM variables - not the same as normal variables because they are referencing tags in our HTML
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
@@ -104,8 +104,10 @@ for (i = 0; i < acc.length; i++) {
 }
 
 //function for reset button
-function reset () {
+function resetGame() {
+    userScore = 0;
+    computerScore = 0;
     document.getElementById("user-score").innerHTML = 0
-    document.getElementById("computer-score").innerHTML = 0
+    document.getElementById("computer-score").innerHTML = 0 
 }
-reset ();
+
