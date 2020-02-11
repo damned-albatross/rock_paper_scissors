@@ -122,3 +122,14 @@ header>h1 {
     font-family: Asap, sans-serif;
     font-size: 20px;
  }
+.reset-game {
+    background-color: #e2584d;
+    color: white;
+    font-family: Asap, sans-serif;
+    padding: 18px;
+    font-size: 30px;
+    position: relative;
+    border: none;
+    padding: 10px 18px;
+    left: 10px;
+}
